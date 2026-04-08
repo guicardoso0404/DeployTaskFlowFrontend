@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/tarefas";
+const API_URL = "https://deploytaskflowbackend.onrender.com/tarefas";
 
 const form = document.getElementById("tarefaForm");
 const listaTarefas = document.getElementById("listaTarefas");
