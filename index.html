@@ -10,39 +10,72 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+  <div class="bg-shape shape-3"></div>
+
   <div class="container">
     <header class="topo">
-      <h1>TaskFlow</h1>
-      <p class="subtitle">Gerenciador de tarefas</p>
-    </header>
+  <div class="brand-box">
+    <img src="./asstets/logo.png" alt="TaskFlow Logo" class="logo-img" />
 
-    <section class="form-section">
+    <div>
+      <h1><span class="task">Task</span><span class="flow">Flow</span></h1>
+      <p class="subtitle">Gerenciador de tarefas moderno e organizado</p>
+    </div>
+  </div>
+</header>
+
+    <section class="form-section card">
+      <div class="section-title">
+        <span class="section-tag">Nova tarefa</span>
+        <h2>Cadastrar tarefa</h2>
+      </div>
+
       <form id="tarefaForm" class="formulario">
-        <input type="text" id="titulo" placeholder="Título da tarefa" required />
+        <div class="input-group">
+          <label for="titulo">Título</label>
+          <input type="text" id="titulo" placeholder="Digite o título da tarefa" required />
+        </div>
 
-        <textarea id="descricao" placeholder="Descrição da tarefa" required></textarea>
+        <div class="input-group">
+          <label for="descricao">Descrição</label>
+          <textarea id="descricao" placeholder="Descreva a tarefa" required></textarea>
+        </div>
 
-        <select id="status" required>
-          <option value="">Selecione o status</option>
-          <option value="PENDENTE">PENDENTE</option>
-          <option value="EM_ANDAMENTO">EM_ANDAMENTO</option>
-          <option value="CONCLUIDA">CONCLUIDA</option>
-        </select>
+        <div class="form-grid-2">
+          <div class="input-group">
+            <label for="status">Status</label>
+            <select id="status" required>
+              <option value="">Selecione o status</option>
+              <option value="PENDENTE">PENDENTE</option>
+              <option value="EM_ANDAMENTO">EM_ANDAMENTO</option>
+              <option value="CONCLUIDA">CONCLUIDA</option>
+            </select>
+          </div>
 
-        <select id="prioridade" required>
-          <option value="">Selecione a prioridade</option>
-          <option value="BAIXA">BAIXA</option>
-          <option value="MEDIA">MEDIA</option>
-          <option value="ALTA">ALTA</option>
-        </select>
+          <div class="input-group">
+            <label for="prioridade">Prioridade</label>
+            <select id="prioridade" required>
+              <option value="">Selecione a prioridade</option>
+              <option value="BAIXA">BAIXA</option>
+              <option value="MEDIA">MEDIA</option>
+              <option value="ALTA">ALTA</option>
+            </select>
+          </div>
+        </div>
 
-        <button type="submit">Cadastrar tarefa</button>
+        <button type="submit" class="btn-principal">Cadastrar tarefa</button>
       </form>
     </section>
 
-    <section class="lista-section">
+    <section class="lista-section card">
       <div class="lista-header">
-        <h2>Lista de tarefas</h2>
+        <div class="section-title">
+          <span class="section-tag">Painel</span>
+          <h2>Lista de tarefas</h2>
+        </div>
+
         <button id="atualizarBtn" class="btn-secundario">Atualizar lista</button>
       </div>
 
