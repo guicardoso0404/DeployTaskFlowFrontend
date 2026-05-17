@@ -1,4 +1,4 @@
-const API_URL = "https://deploytaskflowbackend1.onrender.com/api/tarefas";
+const API_URL = "https://deploytaskflowbackend1.onrender.com/tarefas";
 
 const form = document.getElementById("tarefaForm");
 const listaTarefas = document.getElementById("listaTarefas");
